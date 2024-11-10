@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/pictures/background.jpg);
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(22, 22, 22);
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: darkred;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 60px 20px;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+#hero-image{
+  height:100%;
+  max-width: 500px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: right;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: red;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.hero-button {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: white;
+  background-color: red;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: darkred;
+}
+
+#menu {
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 2.5em;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.burger-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.burger-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.burger-card:hover {
+  transform: scale(1.05);
+}
+
+.burger-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.burger-card h3 {
+  color: red;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.burger-card p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.price {
+  font-size: 1.1em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.order-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: darkred;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 60px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 2.5em;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#review {
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#review h2 {
+  font-size: 2.5em;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #b82828;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #ccc;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card p {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #eee;
+}
+
+.testimonial-card span {
+  display: block;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 1em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links a {
+  color: white;
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: darkred;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
